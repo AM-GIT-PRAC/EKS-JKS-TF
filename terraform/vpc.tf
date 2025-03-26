@@ -12,11 +12,11 @@ module "vpc"{
 	
 	enable_nat_gateway = true
 	
-	public_subnets_tags = {
+	public_subnet_tags = {
 		"kubernets.io/role/elb" = 1
 	}
-	private_subnets_tags = {
-		"kubernets.io/role/internal-elb" =1
+	private_subnet_tags = {
+		"kubernets.io/role/internal-elb" = 1
 	}
 	
 }
